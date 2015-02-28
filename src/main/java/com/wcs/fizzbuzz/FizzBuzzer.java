@@ -3,15 +3,22 @@ package com.wcs.fizzbuzz;
 public class FizzBuzzer {
 
 	public String execute(int number) {
-		if (number % 5 == 0 && number % 3 == 0) {
-			return "fizzbuzz";
-		} else if (number % 5 == 0) {
-			return "buzz";
-		} else if (number % 3 == 0) {
-			return "fizz";
+		String returnValue = "";
+		if (number % 5 == 0) {
+			returnValue = "buzz";
+			if (number % 3 == 0) {
+				return   "fizz" + returnValue;
+			}
 		}
 
-		return Integer.toString(number);
-	}
+		if (number % 3 == 0) {
+			returnValue = "fizz";
+		}
 
+		if (number % 7 == 0) {
+			returnValue = "wizz";
+		}
+
+		return returnValue.isEmpty() ? Integer.toString(number) : returnValue;
+	}
 }
