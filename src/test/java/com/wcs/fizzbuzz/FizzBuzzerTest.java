@@ -37,4 +37,9 @@ public class FizzBuzzerTest {
 		assertEquals("wizz", fizzBuzzer.execute(21));
 		assertEquals("wizz", fizzBuzzer.execute(35));
 	}
+	
+	@Test
+	public void executeShouldRerturnWizzIfTheNumberContains3() {
+		assertEquals("fizz", fizzBuzzer.execute(43));
+	}
 }
