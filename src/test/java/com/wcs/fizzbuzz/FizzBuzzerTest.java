@@ -39,12 +39,12 @@ public class FizzBuzzerTest {
 	}
 
 	@Test
-	public void executeShouldRerturnWizzIfTheNumberContains3() {
+	public void executeShouldRerturnFizzIfTheNumberContains3() {
 		assertEquals("fizz", fizzBuzzer.execute(43));
 	}
 
 	@Test
-	public void executeShouldRerturnWizzIfTheNumberContains5() {
+	public void executeShouldRerturnBuzzIfTheNumberContains5() {
 		assertEquals("buzz", fizzBuzzer.execute(54));
 	}
 
