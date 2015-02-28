@@ -9,15 +9,17 @@ public class FizzBuzzer {
 		if (number % 5 == 0 && number % 3 == 0) {
 			return "fizzbuzz";
 		}
-		
+
+		if (number % 3 == 0 || stringNumber.contains("3")) {
+			returnValue += "fizz";
+		}
+
 		if (number % 5 == 0 || stringNumber.contains("5")) {
-			returnValue = "buzz";
-		} else if (number % 3 == 0 || stringNumber.contains("3")) {
-			returnValue = "fizz";
+			returnValue += "buzz";
 		}
 
 		if (number % 7 == 0 || stringNumber.contains("7")) {
-			returnValue = "wizz";
+			returnValue += "wizz";
 		}
 
 		return returnValue.isEmpty() ? stringNumber : returnValue;
