@@ -16,7 +16,7 @@ public class FizzBuzzer {
 			returnValue = "fizz";
 		}
 
-		if (number % 7 == 0) {
+		if (number % 7 == 0 || stringNumber.contains("7")) {
 			returnValue = "wizz";
 		}
 

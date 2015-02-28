@@ -47,4 +47,9 @@ public class FizzBuzzerTest {
 	public void executeShouldRerturnWizzIfTheNumberContains5() {
 		assertEquals("buzz", fizzBuzzer.execute(54));
 	}
+
+	@Test
+	public void executeShouldRerturnWizzIfTheNumberContains7() {
+		assertEquals("wizz", fizzBuzzer.execute(74));
+	}
 }
